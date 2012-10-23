@@ -23,7 +23,7 @@ Clone this repo.  Run `bundle`. Optionally symlink wabo into your path.
 * Read help/usage: `wabo -h`
 * Watch and open a local php app: `wabo -u http://someapp.local/foo.php`
 * Watch, build and open a markdown file, serving it using the builtin web server: `wabo -s 4040 -c maruku page.md -u http://localhost:4040/page.html`
-* Watch, rebuild/restart a Go web server, open: `wabo -a 'go build main.go' -u http://localhost:8080/`
+* Watch, rebuild/restart a Go web server, wait 500ms for the restart, open: `wabo -a 'go build main.go' -w 500 -u http://localhost:8080/`
 
 ## Usage
 	--directory, -d <s>:   Directory to watch, defaults to current working directory

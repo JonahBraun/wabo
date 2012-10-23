@@ -25,8 +25,8 @@ Examples:
 		wabo -u http://someapp.local/foo.php
 	* Watch, build and open a markdown file, serving it using the builtin web server:
 		wabo -s 4040 -c maruku page.md -u http://localhost:4040/page.html
-	* Watch and restart a Go web server:
-		wabo -a 'go build main.go' -u http://localhost:8080/
+	* Watch and restart a Go web server, wait 500ms for the restart then open:
+		wabo -a 'go build main.go' -w 500 -u http://localhost:8080/
   eod
 
   opt :directory, "Directory to watch, defaults to current working directory", :type=>:string, :default=>Dir.pwd
