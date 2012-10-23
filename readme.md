@@ -20,9 +20,9 @@ Clone this repo.  Then run `gem install colorize rb-fsevent trollop`
 Clone this repo.  Then run `bundle`
 
 ## Examples
-	* Watch a local php app: `wabo -u http://someapp.local/foo.php`
-	* Watch and build a Jeckyl blog: `wabo -c jeckyl -u http://localhost:4000/`
-	* Watch and restart a Go web server: `wabo -a 'go build main.go' -u http://localhost:8080/`
+* Watch a local php app: `wabo -u http://someapp.local/foo.php`
+* Watch and build a Jeckyl blog: `wabo -c jeckyl -u http://localhost:4000/`
+* Watch and restart a Go web server: `wabo -a 'go build main.go' -u http://localhost:8080/`
 
 ## Usage
           --directory, -d <s>:   Directory to watch, defaults to current working directory (default: /Users/j/go/src/github.com/JonahBraun/passex)
