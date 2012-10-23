@@ -1,5 +1,5 @@
 # Wabo
-<b>W</b>atch <b>B</b>uild <b>O</b>pen
+<b>Wa</b>tch <b>B</b>uild <b>O</b>pen
 
 **Currently in _beta_ status**. After testing is over I will package it as a gem.
 
