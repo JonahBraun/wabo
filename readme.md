@@ -1,7 +1,5 @@
 # Wabo
-<b>Wa</b>tch <b>B</b>uild <b>O</b>pen
-
-**Currently in _beta_ status**. After testing is over I will package it as a gem.
+<b>Wa</b>tch <b>B</b>uild <b>O</b>pen. **Currently in _beta_ status**. After testing is over I will package it as a gem.
 
 Watches the current directory (recursively) for changes and performs an action. Only on Mac OS X and with Chrome.
 
