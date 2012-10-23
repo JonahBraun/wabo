@@ -7,7 +7,7 @@ You may specify one of a number of options which will be executed in the followi
 
 1. Start a static file web server.
 1. Run the command. Waits for the command to complete before continuing.
-1. Kill and rerun the daemon. Use this for commands that do not finish.
+1. Kill and rerun the daemon. Use this for commands that do not finish (web servers).
 1. Wait an number of miliseconds.
 1. Open or refresh the URL.
 
