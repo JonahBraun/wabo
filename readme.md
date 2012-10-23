@@ -4,6 +4,7 @@
 Watches the current directory (recursively) for changes and performs an action. Only on Mac OS X and with Chrome.
 
 You may specify one of a number of options which will be executed in the following order:
+
 1. Start a static file web server.
 1. Run the command. Waits for the command to complete before continuing.
 1. Kill and rerun the daemon. Use this for commands that do not finish.
