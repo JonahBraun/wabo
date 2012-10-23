@@ -14,10 +14,10 @@ You may specify one of a number of options which will be executed in the followi
 ## Installation
 
 ### Manual Installation
-Clone this repo.  Then run `gem install colorize rb-fsevent trollop`
+Clone this repo.  Run `gem install colorize rb-fsevent trollop`. Optionally symlink wabo into your path.
 
 ### Bundler
-Clone this repo.  Then run `bundle`
+Clone this repo.  Run `bundle`. Optionally symlink wabo into your path.
 
 ## Examples
 * Read help/usage: `wabo -h`
