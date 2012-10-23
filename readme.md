@@ -20,19 +20,20 @@ Clone this repo.  Then run `gem install colorize rb-fsevent trollop`
 Clone this repo.  Then run `bundle`
 
 ## Examples
-* Watch a local php app: `wabo -u http://someapp.local/foo.php`
-* Watch and build a Jeckyl blog: `wabo -c jeckyl -u http://localhost:4000/`
-* Watch and restart a Go web server: `wabo -a 'go build main.go' -u http://localhost:8080/`
+* Read help/usage: `wabo -h`
+* Watch and open a local php app: `wabo -u http://someapp.local/foo.php`
+* Watch, build and open a markdown file, serving it using the builtin web server: `wabo -s 4040 -c maruku page.md -u http://localhost:4040/page.html`
+* Watch, rebuild/restart a Go web server, open: `wabo -a 'go build main.go' -u http://localhost:8080/`
 
 ## Usage
-          --directory, -d <s>:   Directory to watch, defaults to current working directory (default: /Users/j/go/src/github.com/JonahBraun/passex)
-            --command, -c <s>:   Shell command to execute, use && for multiple commands
-             --daemon, -a <s>:   Service to run and restart
-               --wait, -w <i>:   Nanoseconds to wait before refreshing the URL. Use this to wait for your daemon to restart
-                --url, -u <s>:   URL to open/refresh
-              --serve, -s <i>:   Starts a web server on the given port. Example: dirwatch --serve 4000 --url http://localhost:4000/
-  --verbose, --no-verbose, -v:   Output debug info (default: true)
-                   --help, -h:   Show this message
+	--directory, -d <s>:   Directory to watch, defaults to current working directory
+	--command, -c <s>:   Shell command to execute, use && for multiple commands
+	--daemon, -a <s>:   Service to run and restart
+	--wait, -w <i>:   Nanoseconds to wait before refreshing the URL. Use this to wait for your daemon to restart
+	--url, -u <s>:   URL to open/refresh
+	--serve, -s <i>:   Starts a web server on the given port. Example: `wabo --serve 4000 --url http://localhost:4000/`
+	--verbose, --no-verbose, -v:   Output debug info (default: true)
+	--help, -h:   Show this message
 
 ## Issues
 

@@ -20,10 +20,10 @@ You must specify at least one action, they will be executed in order:
 If an additional new tab is opening instead of the existing tab refreshing, ensure your URL has the trailing /
 
 Examples:
-	* Watch a local php app:
+	* Watch and open a local php app:
 		wabo -u http://someapp.local/foo.php
-	* Watch and build a Jeckyl blog:
-		wabo -c jeckyl -u http://localhost:4000/
+	* Watch, build and open a markdown file, serving it using the builtin web server:
+		wabo -s 4040 -c maruku page.md -u http://localhost:4040/page.html
 	* Watch and restart a Go web server:
 		wabo -a 'go build main.go' -u http://localhost:8080/
   eod
@@ -34,7 +34,7 @@ Examples:
 	opt :wait, "Nanoseconds to wait before refreshing the URL. Use this to wait for your daemon to restart", :type=>:int
   opt :url, "URL to open/refresh", :type=>:string
 
-	opt :serve, "Starts a web server on the given port. Example: dirwatch --serve 4000 --url http://localhost:4000/", :type=>:int
+	opt :serve, "Starts a web server on the given port. Example: wabo --serve 4000 --url http://localhost:4000/", :type=>:int
   opt :verbose, "Output debug info", :default=>true
 end
 
