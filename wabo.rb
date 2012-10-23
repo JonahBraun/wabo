@@ -14,8 +14,9 @@ Watches the current directory (recursively) for changes and performs an action. 
 You must specify at least one action, they will be executed in order:
 	0. Start a static file web server.
 	1. Run the command. Waits for the command to complete before continuing.
-	2. Kill and rerun the daemon. Use this for commands that do not finish.
-	3. Open or refresh the URL.
+	2. Kill and rerun the daemon. Use this for commands that do not finish (web servers).
+	3. Wait a number of miliseconds.
+	4. Open or refresh the URL.
 
 If an additional new tab is opening instead of the existing tab refreshing, ensure your URL has the trailing /
 
