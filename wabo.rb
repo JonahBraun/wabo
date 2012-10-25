@@ -99,7 +99,11 @@ $daemon_pid = nil
 def restart_daemon
 	if $daemon_pid
 		log "killing daemon: ".yellow + $daemon_pid.to_s
-		Process.kill("INT", -Process.getpgid($daemon_pid)) 
+		begin
+			Process.kill("INT", -Process.getpgid($daemon_pid)) 
+		rescue
+			# Daemon already dead, error likely
+		end
 	end
 
 	trap("INT") do
@@ -108,8 +112,8 @@ def restart_daemon
 		exit
 	end
 
+	log "starting daemon: ".green + $opts[:daemon]
 	$daemon_pid = fork do
-		log "starting daemon: ".green + $opts[:daemon]
 		exec $opts[:daemon], {:pgroup=>true}
 	end
 end
