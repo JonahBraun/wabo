@@ -1,5 +1,8 @@
 # Wabo
-<b>Wa</b>tch <b>B</b>uild <b>O</b>pen. **Currently in _beta_ status**. After testing is over I will package it as a gem.
+
+** Wabo has been rewritten in Go with many improvements, please see https://github.com/JonahBraun/wago **
+
+<b>Wa</b>tch <b>B</b>uild <b>O</b>pen.
 
 Watches the current directory (recursively) for changes and performs an action. Only on Mac OS X and with Chrome.
 
